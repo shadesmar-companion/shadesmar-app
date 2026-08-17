@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+coverage/
+
+public/dataset.json
+public/dataset-meta.json

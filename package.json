@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=20.0.0",
+    "packageManager": "pnpm@11.22.0"
   },
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:dataset && tsc -b && vite build",
+    "build": "node scripts/build-dataset.js && tsc -b && vite build",
     "build:dataset": "node scripts/build-dataset.js",
     "preview": "vite preview",
     "test": "vitest run",

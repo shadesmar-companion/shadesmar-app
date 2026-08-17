@@ -77,7 +77,7 @@ body {
 }
 
 /* ── Discrete scrollbar ──────────────────────────────────────────── */
-/* Webkit only (Chrome, Safari, Edge) — Firefox uses it too           */
+/* Webkit only (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
   width: 6px;
 }
