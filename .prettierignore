@@ -1,0 +1,10 @@
+dist/
+
+pnpm-lock.yaml
+
+src/assets/*.png
+src/assets/*.svg
+public/*.svg
+
+public/dataset.json
+public/dataset-meta.json

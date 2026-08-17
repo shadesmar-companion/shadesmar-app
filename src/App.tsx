@@ -2,27 +2,19 @@ function App() {
   return (
     <div className="min-h-screen bg-bg-primary text-text-primary font-sans">
       <div className="p-8 space-y-4 max-w-lg mx-auto pt-16">
-        {/* Fond principal — token bg-primary */}
         <div className="bg-bg-surface rounded-md p-4">
-          <h1 className="text-text-primary text-lg font-semibold">
-            Hello Roshar
-          </h1>
-          <p className="text-text-secondary text-sm mt-1">
-            Design tokens Shadesmar active
-          </p>
+          <h1 className="text-text-primary text-lg font-semibold">Hello Roshar</h1>
+          <p className="text-text-secondary text-sm mt-1">Design tokens Shadesmar active</p>
         </div>
-        {/* Tokens accent */}
+
         <div className="bg-bg-surface rounded-md p-4 space-y-2">
           <p className="text-stormlight font-medium">Stormlight</p>
           <p className="text-warning text-sm">Warning</p>
           <p className="text-text-muted text-sm">Text muted</p>
         </div>
 
-        {/* Badges entité — classes STATIQUES (pas d'interpolation) */}
         <div className="bg-bg-surface rounded-md p-4">
-          <p className="text-text-secondary text-xs mb-3 uppercase tracking-wider">
-            Badges entity
-          </p>
+          <p className="text-text-secondary text-xs mb-3 uppercase tracking-wider">Badges entity</p>
           <div className="flex flex-wrap gap-2">
             <span className="bg-badge-character text-bg-primary text-xs px-2 py-0.5 rounded-full font-medium">
               Character
@@ -46,7 +38,7 @@ function App() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

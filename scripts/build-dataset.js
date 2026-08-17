@@ -1,10 +1,9 @@
-// This script creates empty dataset files so the build doesn't fail
-import { writeFileSync } from "fs";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
+import { writeFileSync } from 'fs'
+import { join, dirname } from 'path'
+import { fileURLToPath } from 'url'
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const publicDir = join(__dirname, "..", "public");
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const publicDir = join(__dirname, '..', 'public')
 
 const emptyDataset = {
   characters: [],
@@ -15,10 +14,10 @@ const emptyDataset = {
   organizations: [],
   glossary: [],
   events: [],
-};
+}
 
 const meta = {
-  version: "dev",
+  version: 'dev',
   generated_at: new Date().toISOString(),
   counts: {
     characters: 0,
@@ -31,15 +30,9 @@ const meta = {
     events: 0,
   },
   total_entities: 0,
-};
+}
 
-writeFileSync(
-  join(publicDir, "dataset.json"),
-  JSON.stringify(emptyDataset, null, 2),
-);
-writeFileSync(
-  join(publicDir, "dataset-meta.json"),
-  JSON.stringify(meta, null, 2),
-);
+writeFileSync(join(publicDir, 'dataset.json'), JSON.stringify(emptyDataset, null, 2))
+writeFileSync(join(publicDir, 'dataset-meta.json'), JSON.stringify(meta, null, 2))
 
-console.log("✓ Dataset stub generated");
+console.log('✓ Dataset stub generated')
